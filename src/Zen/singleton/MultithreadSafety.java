@@ -1,4 +1,4 @@
-package singleton;
+package Zen.singleton;
 
 public class MultithreadSafety {
 

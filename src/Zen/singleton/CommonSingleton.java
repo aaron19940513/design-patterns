@@ -1,18 +1,18 @@
-package singleton;
+package Zen.singleton;
 
 public class CommonSingleton {
 	private static final CommonSingleton singleton = new CommonSingleton();
 
-	// ÏÞÖÆ²úÉú¶à¸ö¶ÔÏó
+	// ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	private CommonSingleton() {
 	}
 
-	// Í¨¹ý¸Ã·½·¨»ñµÃÊµÀý¶ÔÏó
+	// Í¨ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static CommonSingleton getSingleton() {
 		return singleton;
 	}
 
-	// ÀàÖÐÆäËû·½·¨£¬ ¾¡Á¿ÊÇstatic
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½static
 	public static void doSomething() {
 	}
 

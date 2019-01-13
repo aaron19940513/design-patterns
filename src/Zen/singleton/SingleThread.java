@@ -1,13 +1,13 @@
-package singleton;
+package Zen.singleton;
 
 public class SingleThread {
 	private static SingleThread singleton = null;
 
-	// ÏÞÖÆ²úÉú¶à¸ö¶ÔÏó
+	// ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	private SingleThread() {
 	}
 
-	// Í¨¹ý¸Ã·½·¨»ñµÃÊµÀý¶ÔÏó
+	// Í¨ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static SingleThread getSingleton() {
 		if (singleton == null) {
 			singleton = new SingleThread();
