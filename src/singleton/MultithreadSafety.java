@@ -2,15 +2,15 @@ package singleton;
 
 public class MultithreadSafety {
 
-    // ÏŞÖÆ²úÉú¶à¸ö¶ÔÏó
+    // ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private MultithreadSafety() {
     }
 
-    // Í¨¹ı¸Ã·½·¨»ñµÃÊµÀı¶ÔÏó
+    // Í¨ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public static MultithreadSafety getSingleton() {
         return Inner.singleton;
     }
-
+    //ä¸Šé˜¿è¨å¾·
     private static class Inner {
         private static MultithreadSafety singleton = new MultithreadSafety();
     }
