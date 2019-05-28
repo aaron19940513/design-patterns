@@ -3,11 +3,11 @@ package singleton;
 public class SingleThread {
 	private static SingleThread singleton = null;
 
-	// ÏŞÖÆ²úÉú¶à¸ö¶ÔÏó
+	// é™åˆ¶äº§ç”Ÿå¤šä¸ªå¯¹è±¡
 	private SingleThread() {
 	}
 
-	// Í¨¹ı¸Ã·½·¨»ñµÃÊµÀı¶ÔÏó
+	// é€šè¿‡è¯¥æ–¹æ³•è·å¾—å®ä¾‹å¯¹è±¡
 	public static SingleThread getSingleton() {
 		if (singleton == null) {
 			singleton = new SingleThread();

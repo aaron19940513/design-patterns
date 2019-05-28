@@ -3,16 +3,16 @@ package singleton;
 public class CommonSingleton {
 	private static final CommonSingleton singleton = new CommonSingleton();
 
-	// ÏŞÖÆ²úÉú¶à¸ö¶ÔÏó
+	// é™åˆ¶äº§ç”Ÿå¤šä¸ªå¯¹è±¡
 	private CommonSingleton() {
 	}
 
-	// Í¨¹ı¸Ã·½·¨»ñµÃÊµÀı¶ÔÏó
+	// é€šè¿‡è¯¥æ–¹æ³•è·å¾—å®ä¾‹å¯¹è±¡
 	public static CommonSingleton getSingleton() {
 		return singleton;
 	}
 
-	// ÀàÖĞÆäËû·½·¨£¬ ¾¡Á¿ÊÇstatic
+	// ç±»ä¸­å…¶ä»–æ–¹æ³•ï¼Œ å°½é‡æ˜¯static
 	public static void doSomething() {
 	}
 

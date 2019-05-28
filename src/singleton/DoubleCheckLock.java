@@ -1,20 +1,21 @@
+
 package singleton;
 
 /**
- * ¹¦ÄÜÃèÊö£º Java±àÒëÆ÷±¾ÉíµÄÓÅ»¯¹¤×÷»áÔÚ¹¹Ôì·½·¨ÊµÀý»¯Ö®Ç°´Ó¹¹Ôì·½·¨·µ»ØÖ¸Ïò¸Ã¶ÔÏóµÄÒýÓÃ £¬Òò´ËÔÚDoubleCheckLock¶ÔÏóÕæÕýÍêÈ«¹¹ÔìÖ®Ç°£¬doSync¾Í¿ÉÄÜÍê³ÉÁË¡£Õâ»Ø´øÀ´ÎÊÌâ£¬¶øÇÒ£¬ÓÅ»¯ ±àÒëÆ÷»Ø×¢Òâµ½ÊµÀý³ÉÔ±Ã»ÓÐ°ì·¨ÔÚÁ½¸öifÓï¾äÖ®¼ä¸Ä±ä×´Ì¬£¬ËùÓÐ»áÓÅ»¯µôµÚ¶þ¸ö¡£
- * 
- * @author ¸ß½¡³¬
+ * åŠŸèƒ½æè¿°ï¼š Javaç¼–è¯‘å™¨æœ¬èº«çš„ä¼˜åŒ–å·¥ä½œä¼šåœ¨æž„é€ æ–¹æ³•å®žä¾‹åŒ–ä¹‹å‰ä»Žæž„é€ æ–¹æ³•è¿”å›žæŒ‡å‘è¯¥å¯¹è±¡çš„å¼•ç”¨ ï¼Œå› æ­¤åœ¨DoubleCheckLockå¯¹è±¡çœŸæ­£å®Œå…¨æž„é€ ä¹‹å‰ï¼ŒdoSyncå°±å¯èƒ½å®Œæˆäº†ã€‚è¿™å›žå¸¦æ¥é—®é¢˜ï¼Œè€Œä¸”ï¼Œä¼˜åŒ– ç¼–è¯‘å™¨å›žæ³¨æ„åˆ°å®žä¾‹æˆå‘˜æ²¡æœ‰åŠžæ³•åœ¨ä¸¤ä¸ªifè¯­å¥ä¹‹é—´æ”¹å˜çŠ¶æ€ï¼Œæ‰€æœ‰ä¼šä¼˜åŒ–æŽ‰ç¬¬äºŒä¸ªã€‚
+ *
+ * @author é«˜å¥è¶…
  * @date Oct 16, 2018 10:16:40 AM
  * @version 1.0
  */
 public class DoubleCheckLock {
     private static DoubleCheckLock singleton = null;
 
-    // ÏÞÖÆ²úÉú¶à¸ö¶ÔÏó
+    // é™åˆ¶äº§ç”Ÿå¤šä¸ªå¯¹è±¡
     private DoubleCheckLock() {
     }
 
-    // Í¨¹ý¸Ã·½·¨»ñµÃÊµÀý¶ÔÏó
+    // é€šè¿‡è¯¥æ–¹æ³•èŽ·å¾—å®žä¾‹å¯¹è±¡
     public static DoubleCheckLock getSingleton() {
         if (singleton == null) {
             doSync();
