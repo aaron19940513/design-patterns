@@ -7,7 +7,7 @@ public class WelcomeLetter implements Observer{
 
 	@Override
 	public void update(Customer customer) {
-		System.out.println("发送欢迎邮件"+customer.getState());
+		//System.out.println("发送欢迎邮件"+customer.getState());
 	}
 
 }

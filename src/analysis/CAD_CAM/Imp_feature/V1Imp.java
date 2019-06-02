@@ -1,11 +1,12 @@
 package analysis.CAD_CAM.Imp_feature;
 
-import CAD_CAM.V1Facaed;
+
+import analysis.CAD_CAM.V1Facaed;
 
 public class V1Imp extends ImpFeature {
 	
 	private V1Facaed v1Facaed;
-	
+
 	@Override
 	public void ImpSoltFeature() {
 		V1Facaed v1Facaed = V1Facaed.getInstance();

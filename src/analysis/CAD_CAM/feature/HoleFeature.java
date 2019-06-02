@@ -1,16 +1,15 @@
 package analysis.CAD_CAM.feature;
 
-import CAD_CAM.Imp_feature.ImpFeature;
+import analysis.CAD_CAM.Imp_feature.ImpFeature;
+public class HoleFeature extends Feature {
 
-public class HoleFeature extends Feature{
+    public HoleFeature(ImpFeature impFeature) {
+        super(impFeature);
+    }
 
-	public HoleFeature(ImpFeature impFeature) {
-		super(impFeature);
-	}
-
-	@Override
-	public void operation() {
-		impFeature.ImpHoleFeature();
-	}
+    @Override
+    public void operation() {
+        impFeature.ImpHoleFeature();
+    }
 
 }

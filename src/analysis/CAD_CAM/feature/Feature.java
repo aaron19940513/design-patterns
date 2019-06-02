@@ -1,6 +1,7 @@
 package analysis.CAD_CAM.feature;
 
-import CAD_CAM.Imp_feature.ImpFeature;
+
+import analysis.CAD_CAM.Imp_feature.ImpFeature;
 
 public abstract class Feature {
 	protected ImpFeature impFeature;

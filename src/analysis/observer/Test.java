@@ -1,8 +1,6 @@
 package analysis.observer;
 
-import strategy.CalcTax;
-import strategy.ChinaTax;
-import strategy.SalesOrder;
+
 
 public class Test {
 	public static void main(String[] args) {

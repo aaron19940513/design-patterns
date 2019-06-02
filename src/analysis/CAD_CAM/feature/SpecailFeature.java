@@ -1,7 +1,6 @@
 package analysis.CAD_CAM.feature;
 
-import CAD_CAM.Imp_feature.ImpFeature;
-
+import analysis.CAD_CAM.Imp_feature.ImpFeature;
 public class SpecailFeature extends Feature{
 
 	public SpecailFeature(ImpFeature impFeature) {

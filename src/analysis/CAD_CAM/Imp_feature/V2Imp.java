@@ -1,8 +1,7 @@
 package analysis.CAD_CAM.Imp_feature;
 
-import CAD_CAM.oog.OOGFeature;
-import CAD_CAM.oog.OOGSlotFeature;
-
+import analysis.CAD_CAM.oog.OOGFeature;
+import analysis.CAD_CAM.oog.OOGSlotFeature;
 public class V2Imp extends ImpFeature {
 	
 	private OOGFeature OOGFeature;
