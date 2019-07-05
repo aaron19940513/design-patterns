@@ -1,4 +1,4 @@
-package analysis.strategy;
+package strategy.analysis;
 
 public class ChinaTax extends CalcTax{
 
