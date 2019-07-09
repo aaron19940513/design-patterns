@@ -1,5 +1,4 @@
-package analysis.observer;
-
+package observer.analysis;
 import java.util.Vector;
 
 public class ChinaCustomer extends Customer {

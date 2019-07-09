@@ -1,4 +1,4 @@
-package analysis.observer;
+package observer.analysis;
 
 public interface Observer {
 	
