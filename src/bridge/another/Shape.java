@@ -1,4 +1,4 @@
-package analysis.bridge.another;
+package bridge.another;
 
 public abstract class Shape {
 	protected Drawing myDrawing;

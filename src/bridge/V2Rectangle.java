@@ -1,4 +1,4 @@
-package analysis.bridge;
+package bridge;
 
 public class V2Rectangle extends Rectangle{
 

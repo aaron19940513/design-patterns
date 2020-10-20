@@ -1,4 +1,4 @@
-package analysis.bridge.another;
+package bridge.another;
 
 public class Client {
 	static public void main() {

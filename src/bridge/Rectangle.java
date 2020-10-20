@@ -1,4 +1,4 @@
-package analysis.bridge;
+package bridge;
 
 public abstract class Rectangle extends Shape {
 	protected double x1, y1, x2, y2;

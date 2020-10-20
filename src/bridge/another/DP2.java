@@ -1,4 +1,4 @@
-package analysis.bridge.another;
+package bridge.another;
 
 public class DP2 {
     public static void drawLine(double x1, double y1, double x2, double y2) {

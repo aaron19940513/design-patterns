@@ -1,4 +1,4 @@
-package analysis.bridge.another;
+package bridge.another;
 
 public class Rectangle extends Shape {
     private double _x1,_y1,_x2,_y2;

@@ -1,4 +1,4 @@
-package analysis.bridge.another;
+package bridge.another;
 
 public class Circle extends Shape {
     private double _x,_y,_r;

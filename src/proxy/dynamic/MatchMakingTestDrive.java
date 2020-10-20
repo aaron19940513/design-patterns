@@ -7,6 +7,25 @@ public class MatchMakingTestDrive {
     public static void main(String[] args) {
         MatchMakingTestDrive test = new MatchMakingTestDrive();
         test.drive();
+
+
+        // String path = "D:/$Proxy0.class";
+        // byte[] classFile = ProxyGenerator.generateProxyClass("$Proxy0", OwnerInvocationHandler.class.getInterfaces());
+        // FileOutputStream out = null;
+        //
+        // try {
+        //     out = new FileOutputStream(path);
+        //     out.write(classFile);
+        //     out.flush();
+        // } catch (Exception e) {
+        //     e.printStackTrace();
+        // } finally {
+        //     try {
+        //         out.close();
+        //     } catch (IOException e) {
+        //         e.printStackTrace();
+        //     }
+        // }
     }
 
     public MatchMakingTestDrive() {
@@ -46,7 +65,8 @@ public class MatchMakingTestDrive {
     }
 
     private PersonBean getNonOwnerProxy(PersonBean person) {
-        return (PersonBean) Proxy.newProxyInstance(person.getClass().getClassLoader(), person.getClass().getInterfaces(), new NonOwnerInvocationHandler(person));
+        return (PersonBean) Proxy.newProxyInstance(person.getClass().getClassLoader(), person.getClass().getInterfaces(),
+                                                   new NonOwnerInvocationHandler(person));
     }
 
     private PersonBean getPersonFromDataBase(String jorDan) {
